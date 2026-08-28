@@ -1,0 +1,472 @@
+#Enable or disable the Honor system.
+enabled = true
+#Doriki % difference required for Honor penalty.
+#Range: 0 ~ 100
+dorikiThreshold = 30
+#Honor penalty applied per unfair kill.
+#Range: 0 ~ 100
+penalty = 1
+
+#Conqueror Haki Reward Settings
+#Format: "namespace:entity_id=reward"
+#Example: "minecraft:zombie=5"
+[conqueror_rewards]
+	rewards = ["zitoenpiece:lala=200", "zitoenpiece:shanks=300", "zitoenpiece:figarland_shamrock=300", "zitoenpiece:mihawk=300", "mineminenomi:marine_vice_admiral=40", "mineminenomi:pirate_notorious_captain=40"]
+
+#Haki System Settings
+#Config for the Haki bar (overuse).
+[haki_system]
+	#Hard ceiling on a player's maximum Haki Overuse (the haki bar).
+	#Overuse normally scales with total Haki exp (totalExp x 140).
+	#This caps that maximum to a flat value regardless of exp.
+	#-1 = no limit (default behaviour).
+	#Range: > -1
+	overuseLimit = -1
+
+#Yonko System Requirements
+#Hard gates that must ALL be met to qualify for Yonko.
+#Fraud trait skips the doriki requirement.
+[yonko_requirements]
+	#Maximum real-time days a Yonko can be offline before automatic demotion.
+	#0 = disabled (no inactivity demotion).
+	#Range: 0 ~ 90
+	maxOfflineDays = 5
+	#Minimum crew members (excluding captain) for Yonko eligibility.
+	#Range: 1 ~ 100
+	minimumCrewMembers = 4
+	#Number of strikes before a Yonko is demoted.
+	#Range: 1 ~ 20
+	maxStrikes = 5
+	#Cooldown in ticks before a candidate or Yonko can be involved in another Yonko duel.
+	#360000 = 5 in-game hours.
+	#Range: 1200 ~ 1728000
+	duelCooldownTicks = 360000
+	#Minimum territories owned by the crew for Yonko eligibility.
+	#Range: 0 ~ 10
+	minimumTerritories = 1
+	#Minimum doriki for Yonko eligibility. Fraud trait skips this.
+	#Range: 0 ~ 1000000
+	minimumDoriki = 8000
+	#Minimum bounty (in Berries) for Yonko eligibility.
+	#Range: 1000000 ~ 9223372036854775807
+	minimumBounty = 1000000000
+	#Seconds a Yonko has to accept a challenge before it expires.
+	#1800 = 30 minutes.
+	#Range: 60 ~ 7200
+	duelAcceptTimeSeconds = 1800
+	#Maximum territories a Yonko crew can own.
+	#Range: 1 ~ 10
+	maxTerritories = 2
+
+#Navy Mission Settings
+[navy_missions]
+	#Allow players to teleport to their active mission location.
+	#Disabled by default.
+	allowMissionTeleport = false
+	#Cooldown in ticks between mission teleports.
+	#600 = 30 seconds.
+	#Range: 0 ~ 72000
+	missionTeleportCooldownTicks = 600
+
+#Duel System Settings
+[duel_system]
+	#Minimum health before duel ends (2 hearts = 4.0).
+	#Range: 0.5 ~ 10.0
+	minimum_health = 4.0
+	#Enable or disable the duel system.
+	enabled = false
+
+	#Duel Arena Location
+	[duel_system.location]
+		#Range: -2000.0 ~ 2000.0
+		player1_y = 65.0
+		#Range: -3.0E7 ~ 3.0E7
+		player2_x = -0.5
+		#Range: -3.0E7 ~ 3.0E7
+		player1_z = 0.5
+		#Range: -2000.0 ~ 2000.0
+		player2_y = 65.0
+		#Range: -3.0E7 ~ 3.0E7
+		player1_x = 0.5
+		#Range: -3.0E7 ~ 3.0E7
+		player2_z = -0.5
+		#Dimension ID for the duel arena.
+		dimension = "minecraft:overworld"
+
+#Summoning Contract System
+#Configure spawn locations and cooldowns for summoned bosses.
+[summoning_contracts]
+
+	[summoning_contracts.lala]
+		#X coordinate where Lala spawns.
+		#Range: -30000000 ~ 30000000
+		spawnX = 0
+		#Z coordinate where Lala spawns.
+		#Range: -30000000 ~ 30000000
+		spawnZ = 0
+		#Y coordinate where Lala spawns.
+		#Range: 0 ~ 256
+		spawnY = 64
+		#Cooldown in seconds after Lala is defeated before the altar can be used again.
+		#Range: 0 ~ 86400
+		cooldownSeconds = 300
+
+#Family Name System Settings
+[family_names]
+	#Enable or disable the family name system.
+	enabled = true
+
+#Beastkeeper Settings
+[beastkeeper]
+	#List of entity IDs that can be tamed by Beastkeepers.
+	#Format: "modid:entity_name"
+	#Example: "minecraft:wolf", "mineminenomi:humandrill"
+	tameableEntities = ["minecraft:wolf", "minecraft:cat", "minecraft:parrot", "minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:llama", "minecraft:fox", "minecraft:ocelot", "minecraft:polar_bear", "minecraft:panda", "minecraft:bee", "minecraft:iron_golem", "minecraft:snow_golem", "minecraft:ravager", "minecraft:hoglin", "minecraft:zoglin", "minecraft:piglin_brute", "mineminenomi:humandrill", "mineminenomi:sea_cow", "mineminenomi:den_den_mushi", "mineminenomi:lapahn", "mineminenomi:yagara_bull", "mineminenomi:fighting_fish", "mineminenomi:bananawani", "mineminenomi:white_walkie", "mineminenomi:panda_shark", "mineminenomi:flying_fish", "mineminenomi:blugori", "mineminenomi:blagori", "mineminenomi:kung_fu_dugong", "mineminenomi:wrestling_dugong", "mineminenomi:boxing_dugong", "mineminenomi:legendary_master_dugong", "mineminenomi:wandering_dugong"]
+
+#Age System Settings
+[age_system]
+	#Enable or disable the age system.
+	enabled = true
+
+#Origin System Settings
+[origin_system]
+	#List of origins in the format: "name,x,y,z"
+	#Example: ["East Blue,100,64,200", "North Blue,-500,64,100", "South Blue,200,64,-300", "West Blue,-200,64,-500"]
+	#Players are randomly assigned one origin on first join.
+	#Their origin becomes their respawn point when they have no bed.
+	origins = ["East Blue,100,64,200", "North Blue,-500,64,100", "South Blue,200,64,-300", "West Blue,-200,64,-500"]
+	#Enable the Origin System. Players get assigned a random origin (world spawn) on first join.
+	enabled = false
+
+#Limb Loss System Settings
+[limb_system]
+	#Chance multiplier for players WITHOUT a Devil Fruit.
+	#0.5 = 50% less likely to lose limb compared to DF users.
+	#1.0 = same chance as DF users.
+	#Range: 0.0 ~ 1.0
+	nonDevilFruitChanceMultiplier = 0.5
+	#Cooldown in ticks after losing/healing a limb before it can be severed again.
+	#24000 ticks = 20 minutes. Set to 0 to disable cooldown.
+	#Range: 0 ~ 72000
+	severCooldownTicks = 24000
+	#Time in ticks for Logia users to regenerate their limb.
+	#200 ticks = 10 seconds.
+	#Range: 20 ~ 12000
+	logiaRegenTicks = 200
+	#Minimum damage required to have any chance of severing a limb.
+	#Damage below this amount will never trigger limb loss.
+	#Range: 1 ~ 100
+	minDamageThreshold = 50
+	#Enable or disable the entire limb loss system.
+	#When disabled, players cannot lose limbs and medic bag healing is disabled.
+	enabled = true
+	#Multiplier for limb sever chance.
+	#Base chance = damage taken (e.g., 25 damage = 25% chance).
+	#1.0 = normal, 0.5 = half chance, 2.0 = double chance.
+	#Range: 0.0 ~ 5.0
+	severChanceMultiplier = 1.0
+
+#Territory Claiming Settings
+[territory_system]
+	#Allow block destruction inside territories.
+	allowBlockDestruction = false
+	#Minimum Marine rank required to claim territory (enum name, e.g. CAPTAIN).
+	marineRankRequired = "ADMIRAL"
+	#Ticks between block restoration cycles.
+	#Range: 1 ~ 2000
+	restorationInterval = 20
+	#Minimum Revolutionary rank required to claim territory (enum name, e.g. COMMANDER).
+	revoRankRequired = "COMMANDER"
+	#Allow abilities usage inside territories.
+	allowAbilities = true
+	#Allow death inside territories.
+	allowDeath = true
+	#Number of blocks restored per cycle.
+	#Range: 1 ~ 500
+	restorationAmount = 15
+	#Minimum distance players must be from a block for it to restore.
+	#Range: 0 ~ 100
+	restorationDistance = 10
+	#Allow entities to take damage inside territories.
+	allowEntityDamage = true
+	#Enable or disable the entire territory system.
+	enabled = true
+	#Minimum distance between two claimed territories (in blocks).
+	#Range: 10 ~ 1000
+	minDistance = 150
+	#Unconscious time applied by MMN inside protected areas.
+	#Range: 0 ~ 2000
+	unconsciousTime = 40
+	#Allow block restoration inside territories.
+	allowBlockRestoration = false
+	#Default radius size of a claimed territory (in blocks).
+	#Range: 10 ~ 500
+	sizeDefault = 70
+	#Allow stat loss inside territories.
+	allowStatLoss = true
+
+	#Territory Core Stats
+	[territory_system.core_stats]
+		#Belly cost to upgrade core HP.
+		#Range: 1 ~ 1000000
+		upgradeHpCost = 15000
+		#Belly cost to upgrade territory size.
+		#Range: 1 ~ 10000000
+		upgradeSizeCost = 50000
+		#HP gained per upgrade.
+		#Range: 1 ~ 10000
+		upgradeHpAmount = 500
+		#Belly cost per maintenance cycle. Deducted from the captain/owner.
+		#Range: 0 ~ 10000000
+		maintenanceCostBelly = 10000
+		#Default Armor for a new Territory Core.
+		#Range: 0 ~ 100
+		defaultArmor = 2
+		#Armor gained per upgrade.
+		#Range: 1 ~ 10
+		upgradeArmorAmount = 5
+		#Belly cost to upgrade core Armor.
+		#Range: 1 ~ 1000000
+		upgradeArmorCost = 25000
+		#Maximum territory radius.
+		#Range: 50 ~ 1000
+		maxSize = 100
+		#Radius gained per size upgrade (in blocks).
+		#Range: 1 ~ 100
+		upgradeSizeAmount = 10
+		#Ticks between maintenance checks. 72000 = 1 in-game day (1 hour real time).
+		#Range: 1200 ~ 1728000
+		maintenanceIntervalTicks = 72000
+		#HP lost per missed maintenance payment.
+		#Range: 1 ~ 10000
+		maintenanceDecayHp = 100
+		#Default HP for a new Territory Core.
+		#Range: 100 ~ 100000
+		defaultHp = 2000
+
+#Trait System Settings
+[traits]
+	#Enable or disable the entire trait system.
+	enabled = true
+
+	#Enable or disable individual traits
+	[traits.individual]
+		BLINDED = false
+		UNDERDOG = true
+		FRAUD = true
+		WILL_OF_D = true
+		NOBLE = true
+		THREE_EYED_LINEAGE = true
+		LOYAL = true
+		HAKUBA = true
+		LAZY = true
+		CELESTIAL_DRAGON = true
+		TRAITLESS = true
+		BIG_EATER = true
+		TALENTED_LEARNER = true
+		ROYALTY = true
+
+#Profession System Settings
+[profession_system]
+	#Enable or disable the entire profession system.
+	#When disabled, players cannot select or use professions.
+	enabled = true
+
+	#Enable or disable individual professions
+	[profession_system.individual_professions]
+		#Enable the Doctor profession.
+		doctor = true
+		#Enable the Beastkeeper profession.
+		beastkeeper = true
+		#Enable the Smith profession.
+		smith = true
+		#Enable the Helmsman profession.
+		helmsman = true
+		#Allow selecting Marine faction in the character creator.
+		#When false, players must enlist via the Marine Recruiter NPC.
+		#Set to true for servers that don't use the recruiter system.
+		marineInCharacterCreator = false
+		#Enable the Cook profession.
+		cook = true
+		#Enable the Scientist profession.
+		scientist = true
+		#Enable the Navigator profession.
+		navigator = true
+		#Enable the Shipwright profession.
+		shipwright = true
+		#Enable the Fisherman profession.
+		fisherman = true
+
+#Haki Clash System Settings
+#When two entities with Busoshoku Haki active hit each other within the window,
+#a dramatic clash occurs where they lock in combat.
+[clash_system]
+	#How long a clash lasts in ticks.
+	#160 ticks = 8 seconds.
+	#Range: 20 ~ 400
+	durationTicks = 160
+	#Intensity of camera shake during clash.
+	#0 = disabled, 0.15 = light shake, 0.5 = heavy shake.
+	#Range: 0.0 ~ 1.0
+	cameraShakeIntensity = 0.15
+	#Time window in ticks for mutual hits to trigger a clash.
+	#Both entities must hit each other within this window.
+	#5 ticks = 0.25 seconds. Lower = harder to trigger.
+	#Range: 1 ~ 40
+	windowTicks = 5
+	#Duration of dizzy effect applied to loser in ticks.
+	#40 ticks = 2 seconds.
+	#Range: 0 ~ 200
+	dizzyDuration = 40
+	#Percent chance (0-100) for a clash to trigger when conditions are met.
+	#100 = always triggers, 50 = 50% chance, 0 = never triggers.
+	#Range: 0 ~ 100
+	triggerChance = 20
+	#Cooldown in ticks before an entity can clash again.
+	#600 ticks = 30 seconds.
+	#Range: 0 ~ 1200
+	cooldownTicks = 600
+	#Percentage of max overuse recharged for clash loser.
+	#0.05 = loser gets 5% of their max overuse restored.
+	#Range: 0.0 ~ 1.0
+	loserOveruseRecharge = 0.05
+	#Percentage of max overuse recharged for clash winner.
+	#0.15 = winner gets 15% of their max overuse restored.
+	#Range: 0.0 ~ 1.0
+	winnerOveruseRecharge = 0.15
+	#Enable or disable the Haki Clash system entirely.
+	enabled = true
+	#Handicap multiplier for boss/mob haki exp in clash calculations.
+	#0.75 = bosses use 75% of their haki exp when determining winner.
+	#Lower = easier for players to win against bosses.
+	#Range: 0.1 ~ 1.0
+	bossHakiHandicap = 0.75
+
+#World Event System Settings
+#Controls world boss spawns and other server-wide events.
+[world_events]
+	#How often (in minutes) to check for triggering events.
+	#60 = check once per hour.
+	#Range: 1 ~ 1440
+	checkIntervalMinutes = 60
+	#Enable or disable the World Event system entirely.
+	enabled = true
+
+	#Zoan Blade System Settings
+	#Controls Devil Fruit infused weapons and summoned Zoan entities.
+	[world_events.zoan_blade_system]
+		#Allow Devil Fruit users to wield Zoan-infused weapons.
+		#If false, players who have eaten a Devil Fruit cannot use Zoan weapons.
+		allowDevilFruitUsers = false
+		#Base chance (0-100) for natural weapon-fruit compatibility.
+		#Natural compatibility gives bonuses to the summoned Zoan.
+		#100 = always compatible, 0 = never naturally compatible.
+		#Range: 0 ~ 100
+		naturalFusionChance = 15
+		#Enable or disable the Zoan Blade system entirely.
+		#When disabled, weapons cannot be infused with Zoan Devil Fruits.
+		enabled = true
+
+	#Boss behavior settings
+	[world_events.boss_settings]
+		#Range in blocks to consider a player 'engaged' with the boss.
+		#Range: 10.0 ~ 500.0
+		engagementRange = 100.0
+		#Minutes until an unengaged boss despawns.
+		#Range: 1 ~ 120
+		despawnTimeoutMinutes = 20
+		#Percentage of base health added per additional player.
+		#0.10 = 10% more health per extra player.
+		#Range: 0.0 ~ 1.0
+		healthPerPlayerPercent = 0.1
+		#Health the boss regenerates per second when no players are nearby.
+		#Range: 0.0 ~ 100.0
+		healPerSecond = 5.0
+
+	#Navy Admiral Event Settings
+	[world_events.navy_events]
+		#Cooldown in minutes between Navy admiral events.
+		#Range: 5 ~ 1440
+		cooldownMinutes = 30
+		#X coordinate for Navy world events (traitor/yonko).
+		#Range: -30000000 ~ 30000000
+		spawnX = 0
+		#Z coordinate for Navy world events.
+		#Range: -30000000 ~ 30000000
+		spawnZ = 0
+		#Y coordinate for Navy world events.
+		#Range: 0 ~ 256
+		spawnY = 64
+
+		#Colosseum Tournament Settings
+		[world_events.navy_events.colosseum]
+			#Belly entry fee to join the tournament.
+			#Range: 0 ~ 100000000
+			entryFee = 10000
+			#Maximum participants in a tournament.
+			#Range: 2 ~ 64
+			maxPlayers = 32
+			#Registry name of the prize item.
+			prizeItem = "mineminenomi:golden_box"
+			#Prevent stat loss on elimination.
+			noStatLoss = true
+			#Minimum players online for Colosseum to trigger.
+			#Range: 2 ~ 100
+			minPlayers = 4
+			#Keep inventory on elimination.
+			keepInventory = true
+
+			#Colosseum Arena Positions
+			[world_events.navy_events.colosseum.arena]
+				#Range: -2000.0 ~ 2000.0
+				player1_y = 65.0
+				#Range: -3.0E7 ~ 3.0E7
+				player2_x = 110.5
+				#Range: -3.0E7 ~ 3.0E7
+				player1_z = 100.5
+				#Range: -2000.0 ~ 2000.0
+				player2_y = 65.0
+				#Range: -3.0E7 ~ 3.0E7
+				player1_x = 100.5
+				#Range: -3.0E7 ~ 3.0E7
+				player2_z = 100.5
+
+		#Shamrock World Boss Settings
+		[world_events.navy_events.shamrock]
+			#Minimum bounty a player must have to trigger Shamrock event.
+			#At least one player online must meet this requirement.
+			#Shamrock hunts criminals for the World Government.
+			#Range: 0 ~ 100000000000
+			minBounty = 200000
+			#Minimum players online to trigger Shamrock event.
+			#Range: 1 ~ 100
+			minPlayers = 1
+			#X coordinate for Shamrock spawn location.
+			#Range: -30000000 ~ 30000000
+			spawnX = 0
+			#Z coordinate for Shamrock spawn location.
+			#Range: -30000000 ~ 30000000
+			spawnZ = 0
+			#Y coordinate for Shamrock spawn location.
+			#Range: 0 ~ 256
+			spawnY = 64
+
+		#Shanks World Boss Settings
+		[world_events.navy_events.shanks]
+			#Minimum players online to trigger Shanks event.
+			#Range: 1 ~ 100
+			minPlayers = 1
+			#Minimum Doriki a player must have to trigger Shanks event.
+			#At least one player online must meet this requirement.
+			#Range: 0.0 ~ 100000.0
+			minDoriki = 7000.0
+			#X coordinate for Shanks spawn location.
+			#Range: -30000000 ~ 30000000
+			spawnX = 0
+			#Z coordinate for Shanks spawn location.
+			#Range: -30000000 ~ 30000000
+			spawnZ = 0
+			#Y coordinate for Shanks spawn location.
+			#Range: 0 ~ 256
+			spawnY = 64
+

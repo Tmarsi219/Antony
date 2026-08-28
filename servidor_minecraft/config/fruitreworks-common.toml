@@ -1,0 +1,81 @@
+
+#Fruit Reworks Configuration
+[leopard]
+	#Enable Leopard Awakening abilities. If disabled, the base game Leopard morph abilities will be used instead of the reworked versions.
+	enableLeopardAwakening = true
+
+#Meter System Recharge Rates
+#These values control how fast each meter system recharges.
+#Higher values = faster recharge.
+#Combat checks use Mine Mine no Mi's real combat-state (recent attacker/combat cache), not combat-mode toggle.
+[meters]
+	#Global multiplier applied to ALL meter recharge rates. Default: 1.0
+	#Range: 0.1 ~ 10.0
+	globalRechargeMultiplier = 1.0
+
+	#Strain Meter (Hito Hito no Mi forms)
+	[meters.strain]
+		#Combat recharge multiplier applied when IN combat. Default: 0.5 (50% of out-of-combat base)
+		#Range: 0.01 ~ 1.0
+		combatRechargeMultiplier = 0.5
+		#Base recharge rate per second when OUT of combat. Default: 4.0
+		#Range: 0.1 ~ 100.0
+		rechargeRate = 4.0
+
+	#Steel Meter (Supa Supa no Mi)
+	[meters.steel]
+		#Recharge rate per tick when IN combat. Default: 0.035
+		#Range: 0.01 ~ 10.0
+		combatRechargeRate = 0.035
+		#Base recharge rate per tick when OUT of combat. Default: 0.08
+		#Range: 0.01 ~ 10.0
+		rechargeRate = 0.08
+
+	#String Meter (Ito Ito no Mi)
+	[meters.string]
+		#Recharge rate per tick when IN combat. Default: 0.06
+		#Range: 0.01 ~ 10.0
+		combatRechargeRate = 0.06
+		#Base recharge rate per tick when OUT of combat. Default: 1.0
+		#Range: 0.01 ~ 50.0
+		rechargeRate = 1.0
+
+	#Ice Meter (Hie Hie no Mi)
+	[meters.ice]
+		#Recharge rate per tick when IN combat. Default: 0.04
+		#Range: 0.01 ~ 10.0
+		combatRechargeRate = 0.04
+		#Base recharge rate per tick when OUT of combat. Default: 0.1
+		#Range: 0.01 ~ 10.0
+		rechargeRate = 0.1
+
+	#Flame Meter (Mera Mera no Mi)
+	[meters.flame]
+		#Recharge rate per tick when IN combat. Default: 0.04
+		#Range: 0.01 ~ 10.0
+		combatRechargeRate = 0.04
+		#Base recharge rate per tick when OUT of combat. Default: 0.1
+		#Range: 0.01 ~ 10.0
+		rechargeRate = 0.1
+
+	#Bomb Energy (Bomu Bomu no Mi)
+	[meters.bomb]
+		#Combat recharge multiplier applied when IN combat. Default: 0.4 (40% of out-of-combat base)
+		#Range: 0.01 ~ 1.0
+		combatRechargeMultiplier = 0.4
+		#Base recharge rate per tick when OUT of combat. Default: 0.5
+		#Range: 0.01 ~ 10.0
+		rechargeRate = 0.5
+
+#Armor System Fixes
+#Fixes the vanilla Minecraft bug where armor values above 20-25 can cause
+#players to take MORE damage instead of less due to integer overflow in damage calculations.
+[armor]
+	#Enable the armor overflow fix. This prevents high armor values from causing increased damage.
+	#Recommended to keep enabled if using Full Body Haki or other high-armor abilities. Default: true
+	enableArmorFix = true
+	#Maximum effective armor value. Armor above this value will be capped to prevent overflow.
+	#Vanilla Minecraft caps at 20, but the mod's damage system can handle up to 30 safely. Default: 30
+	#Range: 20 ~ 100
+	maxEffectiveArmor = 30
+

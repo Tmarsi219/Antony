@@ -1,0 +1,27 @@
+
+["Devil Fruit Expiration"]
+	#Time in seconds before expiration to show warning
+	#Range: 10 ~ 300
+	warningTimeSeconds = 60
+	#Enable devil fruit expiration system
+	enableExpiration = true
+	#Time in minutes before a devil fruit expires after being picked up (max 7 days)
+	#Range: 1 ~ 10080
+	expirationTimeMinutes = 30
+
+["Juno's Blessing Settings"]
+	#If true, Juno's Blessing adds extra time instead of making the fruit permanent.
+	#If false (default), Juno's Blessing makes the fruit never expire.
+	junoAddsTimeInsteadOfPermanent = false
+	#Amount of extra time (in minutes) Juno's Blessing adds to a devil fruit.
+	#Only used if junoAddsTimeInsteadOfPermanent is true. (max 7 days)
+	#Range: 1 ~ 10080
+	junoExtraTimeMinutes = 60
+
+["Visual Settings"]
+	#Maximum distance (in blocks) to render the floating timer
+	#Range: 4.0 ~ 64.0
+	droppedTimerRenderDistance = 16.0
+	#Show floating timer above dropped devil fruits
+	enableDroppedTimer = true
+

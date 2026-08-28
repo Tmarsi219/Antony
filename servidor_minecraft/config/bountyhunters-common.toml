@@ -1,0 +1,364 @@
+
+#===================================================================================
+#                         BOUNTY HUNTERS CONFIGURATION
+#===================================================================================
+#
+#HOW TO ADD CUSTOM ABILITIES:
+#  Abilities use full Java class names (WrapperGoal classes).
+#  Format: package.path.to.AbilityNameWrapperGoal
+#
+#IMPORTANT RULES:
+#  1. Class names are CASE-SENSITIVE and use PascalCase
+#  2. Do NOT use underscores (wrong: extra_hachis, correct: ExtraHachis)
+#  3. Use the full package path
+#
+#===================================================================================
+#                      AVAILABLE ABILITIES LIST
+#===================================================================================
+#
+#SWORDSMAN (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.*):
+#  HiryuKaenWrapperGoal, ShiShishiSonsonWrapperGoal, YakkodoriWrapperGoal,
+#  OTatsumakiWrapperGoal, SanbyakurokujuPoundHoWrapperGoal
+#
+#SNIPER (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.*):
+#  KaenBoshiWrapperGoal, TetsuBoshiWrapperGoal, RenpatsuNamariBoshiWrapperGoal,
+#  SakuretsuSabotenBoshiWrapperGoal, KemuriBoshiWrapperGoal, NemuriBoshiWrapperGoal,
+#  TokuyoAburaBoshiWrapperGoal
+#
+#BRAWLER (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.*):
+#  ChargedPunchWrapperGoal, HakaiHoWrapperGoal, SuplexWrapperGoal,
+#  GenkotsuMeteorWrapperGoal, SpinningBrawlWrapperGoal, JishinHoWrapperGoal,
+#  TackleWrapperGoal, PunchRushWrapperGoal, DamageAbsorptionWrapperGoal
+#
+#BLACK LEG (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.blackleg.*):
+#  ExtraHachisWrapperGoal, PartyTableKickCourseWrapperGoal,
+#  AntiMannerKickCourseWrapperGoal, ConcasseWrapperGoal
+#
+#ROKUSHIKI (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.*):
+#  SoruWrapperGoal, GeppoWrapperGoal, TekkaiWrapperGoal,
+#  ShiganWrapperGoal, RankyakuWrapperGoal, KamieWrapperGoal
+#
+#HAKI (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.*):
+#  BusoshokuHakiHardeningWrapperGoal, BusoshokuHakiEmissionWrapperGoal,
+#  BusoshokuHakiFullbodyHardeningWrapperGoal, BusoshokuHakiInternalDestructionWrapperGoal,
+#  BusoshokuHakiImbuingWrapperGoal, KenbunshokuHakiFutureSightWrapperGoal,
+#  HaoshokuHakiInfusionWrapperGoal
+#
+#FISHMAN KARATE (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.fishman.*):
+#  KachiageHaisokuWrapperGoal, KarakusagawaraSeikenWrapperGoal, MizuOsuWrapperGoal,
+#  MizuShuryudanWrapperGoal, MizuTaihoWrapperGoal, MurasameWrapperGoal,
+#  SamehadaShoteiWrapperGoal, SharkOnToothWrapperGoal, UchimizuWrapperGoal
+#
+#ELECTRO (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.electro.*):
+#  EleclawWrapperGoal, ElectricalLunaWrapperGoal, ElectricalMissileWrapperGoal,
+#  ElectricalTempestaWrapperGoal
+#
+#CYBORG (xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.cyborg.*):
+#  RadicalBeamWrapperGoal
+#
+#=== FIGHTING STYLES MOD (Requires 'fightingstyles' mod installed) ===
+#
+#DIAL MASTER (coms.fightingstyles.entities.mobs.goals.abilities.dial.*):
+#  NOTE: DIAL_MASTER style ONLY works if Fighting Styles mod is installed!
+#  AxeSlashWrapperGoal, FlashDialBlastWrapperGoal, ImpactFistWrapperGoal,
+#  FlameWaveWrapperGoal, EisenShieldWrapperGoal
+#===================================================================================
+[bountyhunters]
+
+	#Combat Style Definitions
+	#NOTE: DIAL_MASTER requires Fighting Styles mod to be installed.
+	[bountyhunters.combatStyles]
+
+		#Black Leg Combat Style
+		[bountyhunters.combatStyles.blackLeg]
+			#Abilities for Black Leg (full WrapperGoal class names)
+			abilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.blackleg.ExtraHachisWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.blackleg.PartyTableKickCourseWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.blackleg.AntiMannerKickCourseWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.blackleg.ConcasseWrapperGoal"]
+			#Weapons for Black Leg (registry names like modid:item_name)
+			weapons = []
+
+		#Sniper Combat Style
+		[bountyhunters.combatStyles.sniper]
+			#Abilities for Sniper (full WrapperGoal class names)
+			abilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.KaenBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.TetsuBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.RenpatsuNamariBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.SakuretsuSabotenBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.KemuriBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.NemuriBoshiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.TokuyoAburaBoshiWrapperGoal"]
+			#Weapons for Sniper (registry names like modid:item_name)
+			weapons = ["mineminenomi:flintlock", "mineminenomi:walker", "mineminenomi:rifle"]
+
+		#Dial Master (Requires Fighting Styles mod) Combat Style [REQUIRES: Fighting Styles mod]
+		[bountyhunters.combatStyles.dialMaster]
+			#Abilities for Dial Master (Requires Fighting Styles mod) (full WrapperGoal class names)
+			abilities = ["coms.fightingstyles.entities.mobs.goals.abilities.dial.AxeSlashWrapperGoal", "coms.fightingstyles.entities.mobs.goals.abilities.dial.FlashDialBlastWrapperGoal", "coms.fightingstyles.entities.mobs.goals.abilities.dial.ImpactFistWrapperGoal", "coms.fightingstyles.entities.mobs.goals.abilities.dial.FlameWaveWrapperGoal", "coms.fightingstyles.entities.mobs.goals.abilities.dial.EisenShieldWrapperGoal"]
+			#Weapons for Dial Master (Requires Fighting Styles mod) (registry names like modid:item_name)
+			weapons = ["mineminenomi:axe_dial", "mineminenomi:flash_dial", "mineminenomi:impact_dial", "mineminenomi:reject_dial", "mineminenomi:breath_dial", "mineminenomi:flame_dial", "mineminenomi:milky_dial"]
+
+		#Swordsman Combat Style
+		[bountyhunters.combatStyles.swordsman]
+			#Abilities for Swordsman (full WrapperGoal class names)
+			abilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.HiryuKaenWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.ShiShishiSonsonWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.YakkodoriWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.OTatsumakiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.SanbyakurokujuPoundHoWrapperGoal"]
+			#Weapons for Swordsman (registry names like modid:item_name)
+			weapons = ["mineminenomi:katana", "mineminenomi:cutlass", "mineminenomi:kiribachi", "mineminenomi:shigure", "mineminenomi:yubashiri", "mineminenomi:sandai_kitetsu", "mineminenomi:wado_ichimonji", "minecraft:iron_sword", "minecraft:diamond_sword"]
+
+		#Brawler Combat Style
+		[bountyhunters.combatStyles.brawler]
+			#Abilities for Brawler (full WrapperGoal class names)
+			abilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.ChargedPunchWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.HakaiHoWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.SuplexWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.GenkotsuMeteorWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.SpinningBrawlWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.JishinHoWrapperGoal"]
+			#Weapons for Brawler (registry names like modid:item_name)
+			weapons = []
+
+	#Tier Definitions - Stats, styles, and abilities per tier
+	[bountyhunters.tiers]
+
+		#Tier 5 - Master Hunters with Advanced Haki
+		[bountyhunters.tiers.tier5]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 6.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.SoruWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.GeppoWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.TekkaiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.ShiganWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.RankyakuWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.KamieWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiHardeningWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiEmissionWrapperGoal"]
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 12.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 25
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER", "BLACK_LEG", "DIAL_MASTER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 95
+			#Bounty threshold to trigger Tier 5
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 150000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 12.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+		#Tier 4 - Elite Hunters with Full Rokushiki + Basic Haki
+		[bountyhunters.tiers.tier4]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 4.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.SoruWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.GeppoWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.TekkaiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.ShiganWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.RankyakuWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.KamieWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiHardeningWrapperGoal"]
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 10.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 0
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER", "BLACK_LEG", "DIAL_MASTER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 85
+			#Bounty threshold to trigger Tier 4
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 100000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 10.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+		#Tier 3 - Veteran Hunters with Geppo
+		[bountyhunters.tiers.tier3]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 2.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.SoruWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.GeppoWrapperGoal"]
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 8.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 0
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER", "BLACK_LEG", "DIAL_MASTER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 75
+			#Bounty threshold to trigger Tier 3
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 50000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 8.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+		#Tier 2 - Hunters with Soru
+		[bountyhunters.tiers.tier2]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 0.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.SoruWrapperGoal"]
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 6.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 0
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER", "BLACK_LEG", "DIAL_MASTER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 60
+			#Bounty threshold to trigger Tier 2
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 25000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 7.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+		#Tier 6 - Legendary Hunters with Full Haki Suite
+		[bountyhunters.tiers.tier6]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 8.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = ["xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.SoruWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.GeppoWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.TekkaiWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.ShiganWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.RankyakuWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki.KamieWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiHardeningWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiEmissionWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiFullbodyHardeningWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.BusoshokuHakiInternalDestructionWrapperGoal", "xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki.KenbunshokuHakiFutureSightWrapperGoal"]
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 14.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 50
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER", "BLACK_LEG", "DIAL_MASTER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 120
+			#Bounty threshold to trigger Tier 6
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 200000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 15.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+		#Tier 1 - Rookie Hunters
+		[bountyhunters.tiers.tier1]
+			#Armor toughness
+			#Range: 0.0 ~ 20.0
+			armorToughness = 0.0
+			#Additional abilities (Rokushiki, Haki, etc)
+			additionalAbilities = []
+			#Devil Fruits (empty = random from MMNM)
+			devilFruits = []
+			#Armor points
+			#Range: 0.0 ~ 30.0
+			armor = 4.0
+			#Chance (0-100) for Devil Fruit
+			#Range: 0 ~ 100
+			devilFruitChance = 0
+			#Combat styles allowed for this tier.
+			#Valid: SWORDSMAN, SNIPER, BRAWLER, BLACK_LEG, DIAL_MASTER
+			#Note: DIAL_MASTER is auto-removed if Fighting Styles mod is not installed.
+			allowedStyles = ["SWORDSMAN", "SNIPER", "BRAWLER"]
+			#Health points
+			#Range: 20 ~ 500
+			health = 50
+			#Bounty threshold to trigger Tier 1
+			#Range: 1000 ~ 9223372036854775807
+			bountyThreshold = 10000
+			#Attack damage
+			#Range: 1.0 ~ 50.0
+			attackDamage = 6.0
+			#Blocked abilities (will be skipped)
+			blockedAbilities = []
+
+	#Spawn Settings
+	[bountyhunters.spawn]
+		#Minimum spawn distance from player (blocks)
+		#Range: 10 ~ 100
+		spawnDistance = 20
+		#Minimum bounty required for hunters to spawn.
+		#Range: 0 ~ 9223372036854775807
+		minimumBountyForSpawn = 10000
+		#Allow bounty hunters to spawn in modded dimensions
+		allowModdedDimensionSpawn = true
+		#Time in MINUTES between spawn attempts.
+		#Range: 1 ~ 60
+		timeBetweenSpawns = 5
+		#Allow bounty hunters to spawn in the Nether
+		allowNetherSpawn = true
+		#Allow bounty hunters to spawn in the End
+		allowEndSpawn = true
+		#Maximum spawn distance from player (blocks)
+		#Range: 20 ~ 150
+		maxSpawnDistance = 40
+		#Chance (0-100) for a bounty hunter to spawn each cycle. 0 = disabled.
+		#Range: 0 ~ 100
+		spawnChance = 25
+
+	#Hunter Names
+	[bountyhunters.names]
+		#List of possible names for bounty hunters
+		hunterNames = ["Hawk", "Viper", "Shadow", "Blade", "Storm", "Fang", "Ghost", "Reaper", "Wolf", "Raven", "Cobra", "Phantom", "Striker", "Hunter", "Tracker", "Bounty", "Stalker", "Predator", "Seeker", "Warden", "Razor", "Talon", "Crimson", "Onyx", "Steel", "Iron", "Silver", "Gold", "Bronze"]
+
+	#Exponential Growth Settings
+	#When enabled, bounty hunters will scale their stats based on the highest doriki in the world.
+	#This works similar to how Vice Admirals and Notorious Pirates scale in Mine Mine No Mi.
+	#
+	#Formula: finalStat = baseStat * (1 + (worldDoriki / minDorikiForScaling) ^ growthRate * growthBase)
+	#Example with defaults: If world highest doriki is 10000 and minDoriki is 5000:
+	#  multiplier = 1 + (10000/5000)^0.5 * 0.1 = 1 + 1.414 * 0.1 = 1.14 (14% boost)
+	[bountyhunters.exponentialGrowth]
+		#Enable exponential growth based on world's highest doriki.
+		#When enabled, bounty hunters will become stronger as players progress.
+		enableExponentialGrowth = true
+		#Exponent for the growth curve.
+		#0.5 = square root (slower scaling at high doriki)
+		#1.0 = linear scaling
+		#2.0 = quadratic (very aggressive scaling)
+		#Range: 0.1 ~ 2.0
+		exponentialGrowthRate = 0.5
+		#Minimum world doriki before scaling kicks in.
+		#Below this value, hunters use base stats only.
+		#Range: 1000.0 ~ 100000.0
+		minDorikiForScaling = 5000.0
+		#Base multiplier for exponential growth.
+		#Higher values = more aggressive scaling.
+		#0.1 = 10% boost per unit of scaled doriki
+		#Range: 0.01 ~ 1.0
+		exponentialGrowthBase = 0.1
+		#Apply exponential scaling to health
+		scaleHealth = true
+		#Maximum stat multiplier cap.
+		#Prevents hunters from becoming too powerful.
+		#2.0 = stats can at most double
+		#Range: 1.5 ~ 10.0
+		maxStatMultiplier = 3.0
+		#Apply exponential scaling to hunter's doriki
+		scaleDoriki = true
+		#Apply exponential scaling to attack damage
+		scaleAttack = true
+		#Apply exponential scaling to armor
+		scaleArmor = true
+

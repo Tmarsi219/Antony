@@ -1,0 +1,11 @@
+
+[Unblock]
+	#The Doriki level required to unlock awakened abilities.
+	#-1 for Max Doriki limit.
+	#Default: -1
+	#Range: -1 ~ 100000
+	"Doriki Threshold" = 5000
+	#Allows players to unlock awakened abilities based on their Doriki level.
+	#Default: true
+	"Unlock with Doriki" = true
+

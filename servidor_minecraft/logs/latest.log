@@ -1,0 +1,274 @@
+[27Aug2026 22:17:03.516] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 36.2.42, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, nogui]
+[27Aug2026 22:17:03.519] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 11.0.32 by Ubuntu
+[27Aug2026 22:17:03.814] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[27Aug2026 22:17:03.873] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/workspaces/Antony/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=SERVER
+[27Aug2026 22:17:04.586] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[27Aug2026 22:17:04.689] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[27Aug2026 22:17:04.696] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[27Aug2026 22:17:04.703] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[27Aug2026 22:17:06.010] [main/ERROR] [mixin/]: Mixin config hito_hito_no_mi_nika.mixin.json does not specify "minVersion" property
+[27Aug2026 22:17:06.035] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, ., nogui]
+[27Aug2026 22:17:06.097] [main/WARN] [mixin/]: Reference map 'bountyhunters.refmap.json' for bountyhunters.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:06.099] [main/WARN] [mixin/]: Reference map 'LeopardRework.refmap.json' for mineminenomiaddontemplate.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:06.367] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.18.0+mc1.16.5: 89 options available, 0 override(s) found
+[27Aug2026 22:17:06.717] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[27Aug2026 22:17:06.804] [main/WARN] [mixin/]: Reference map 'mixins.mineminenomi-awaken-path.refmap.json' for mixins.mineminenomi-awaken-path.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:06.809] [main/WARN] [mixin/]: Reference map 'coroutil.refmap.json' for coroutil.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:06.816] [main/WARN] [mixin/]: Reference map 'BlitzRaces.refmap.json' for blitzraces.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:06.820] [main/WARN] [mixin/]: Reference map 'devilhordes.refmap.json' for devilhordes.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2026 22:17:07.500] [main/WARN] [mixin/]: Error loading class: org/valkyrienskies/core/util/assertions/stages/TickStageEnforcerImpl (java.lang.ClassNotFoundException: null)
+[27Aug2026 22:17:07.501] [main/WARN] [mixin/]: @Mixin target org.valkyrienskies.core.util.assertions.stages.TickStageEnforcerImpl was not found mine-mine-no-mi.mixins.json:valkyrienskies.TickStageEnforcerImplMixin
+[27Aug2026 22:17:07.908] [main/WARN] [mixin/]: Error loading class: xyz/pixelatedw/mineminenomi/data/entity/haki/HakiData (java.lang.ClassNotFoundException: null)
+[27Aug2026 22:17:07.908] [main/WARN] [mixin/]: @Mixin target xyz.pixelatedw.mineminenomi.data.entity.haki.HakiData was not found zitoenpiece.mixins.json:HakiDataMixin
+[27Aug2026 22:17:07.959] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:33]: [ZitoenPieceMixinPlugin] shouldApplyMixin called for: net.Zitoen.zitoenpiece.mixin.compat.CartAddonAbilityDisableMixin -> target: net.MrMagicalCart.cartaddon.abilities.hakiextra.EffectNullificationAbility
+[27Aug2026 22:17:07.960] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:35]: [ZitoenPieceMixinPlugin] CartAddon mixin, applying: true
+[27Aug2026 22:17:07.961] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:33]: [ZitoenPieceMixinPlugin] shouldApplyMixin called for: net.Zitoen.zitoenpiece.mixin.compat.CartAddonAbilityDisableMixin -> target: net.MrMagicalCart.cartaddon.abilities.hakiextra.ObservationKillerAbility
+[27Aug2026 22:17:07.961] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:35]: [ZitoenPieceMixinPlugin] CartAddon mixin, applying: true
+[27Aug2026 22:17:07.962] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:33]: [ZitoenPieceMixinPlugin] shouldApplyMixin called for: net.Zitoen.zitoenpiece.mixin.compat.YokaiImmortalityAccessor -> target: net.MagicalBlitz.revamp.abilities.abyss.ImmortalityAbility
+[27Aug2026 22:17:07.963] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:39]: [ZitoenPieceMixinPlugin] Yokai mixin, applying: true
+[27Aug2026 22:17:07.964] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:33]: [ZitoenPieceMixinPlugin] shouldApplyMixin called for: net.Zitoen.zitoenpiece.mixin.compat.YokaiDeepSeaAccessor -> target: net.MagicalBlitz.revamp.abilities.abyss.DeepSeaPassiveBonusesAbility
+[27Aug2026 22:17:07.964] [main/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.mixin.ZitoenPieceMixinPlugin:shouldApplyMixin:39]: [ZitoenPieceMixinPlugin] Yokai mixin, applying: true
+[27Aug2026 22:17:07.967] [main/WARN] [mixin/]: Error loading class: net/MrMagicalCart/cartaddon/abilities/hakiextra/EffectNullificationAbility (java.lang.ClassNotFoundException: null)
+[27Aug2026 22:17:07.968] [main/WARN] [mixin/]: Error loading class: net/MrMagicalCart/cartaddon/abilities/hakiextra/ObservationKillerAbility (java.lang.ClassNotFoundException: null)
+[27Aug2026 22:17:08.268] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via org.embeddedt.modernfix.forge.shadow.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[27Aug2026 22:17:08.529] [main/INFO] [net.minecraft.util.registry.Bootstrap/]: ModernFix reached bootstrap stage (5.882 s after launch)
+[27Aug2026 22:17:12.006] [main/INFO] [net.minecraft.util.registry.Bootstrap/]: Vanilla bootstrap took 3474 milliseconds
+[27Aug2026 22:17:12.168] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `citadel` for name `debug`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.171] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `citadel` for name `citadel_book`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.171] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `citadel` for name `effect_item`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.172] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `citadel` for name `fancy_item`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.226] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `playerrevive` for name `death`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.227] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `playerrevive` for name `revived`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:12.399] [modloading-worker-1/INFO] [STDOUT/]: [net.boone.moremineminenomi.LeopardRework:<init>:18]: Leopard Rework mod loaded!
+[27Aug2026 22:17:12.924] [modloading-worker-2/WARN] [mixin/]: @Final field NEKO_NEKO_NO_MI_LEOPARD:Lxyz/pixelatedw/mineminenomi/items/AkumaNoMiItem; in mineminenomiaddontemplate.mixins.json:ModAbilitiesMixin should be final
+[27Aug2026 22:17:12.925] [modloading-worker-2/WARN] [mixin/]: @Final field GOMU_GOMU_NO_MI:Lxyz/pixelatedw/mineminenomi/items/AkumaNoMiItem; in hito_hito_no_mi_nika.mixin.json:ModAbilitiesMixin should be final
+[27Aug2026 22:17:13.350] [modloading-worker-1/INFO] [coroutil/]: forge loader environment detected
+[27Aug2026 22:17:13.738] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Initializing Ice Ice Fruit Rework mod...
+[27Aug2026 22:17:13.744] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Registering Bomu particle types...
+[27Aug2026 22:17:13.753] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Registering Fruit Reworks items...
+[27Aug2026 22:17:13.754] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Fruit Reworks items registered successfully!
+[27Aug2026 22:17:13.789] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Registering Ice Rework abilities...
+[27Aug2026 22:17:13.847] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Ice Rework abilities registered successfully!
+[27Aug2026 22:17:13.849] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Registering Fruit Reworks entities...
+[27Aug2026 22:17:13.850] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Fruit Reworks entities registered successfully!
+[27Aug2026 22:17:13.853] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Ice Ice Fruit Rework addon initialized!
+[27Aug2026 22:17:13.855] [modloading-worker-1/INFO] [com.fruitreworks.FruitReworks/]: Enhanced ice abilities will be added to Hie Hie no Mi via ModifyDevilFruitEvent
+[27Aug2026 22:17:14.051] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[27Aug2026 22:17:14.052] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
+[27Aug2026 22:17:14.845] [modloading-worker-2/INFO] [STDOUT/]: [xyz.pixelatedw.mineminenomi.config.GeneralConfig:handler$zjk000$zitoenpiece$modifyHakiLimitOnClassLoad:548]: [ZitoenPiece] Modified HAKI_EXP_LIMIT at class load: Default=300, Max=1000
+[27Aug2026 22:17:14.860] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]: Permissions registered:
+[27Aug2026 22:17:14.863] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.ability
+[27Aug2026 22:17:14.863] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.ability.reset_cooldown
+[27Aug2026 22:17:14.863] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.ability_protection
+[27Aug2026 22:17:14.863] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.belly
+[27Aug2026 22:17:14.864] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.bounty
+[27Aug2026 22:17:14.864] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.challenge
+[27Aug2026 22:17:14.865] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.change_character
+[27Aug2026 22:17:14.865] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.check_fruits.history
+[27Aug2026 22:17:14.865] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.check_fruits.list
+[27Aug2026 22:17:14.866] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.check_player
+[27Aug2026 22:17:14.866] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.doriki
+[27Aug2026 22:17:14.867] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.events
+[27Aug2026 22:17:14.867] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.extol
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.hakiexp
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.issue_bounty
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.loyalty
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.quest
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.removedf
+[27Aug2026 22:17:14.868] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.command.removedf.self
+[27Aug2026 22:17:14.869] [modloading-worker-2/INFO] [xyz.pixelatedw.mineminenomi.ModMain/]:   mineminenomi.item.buster_call
+[27Aug2026 22:17:16.035] [main/INFO] [net.Zitoen.zitoenpiece.ZitoenPiece/]: HELLO from Register Block
+[27Aug2026 22:17:17.007] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `leopardrework` for name `leopardtrueheavy`, expected `leopard_rework`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:17.008] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `leopardrework` for name `awakenedheavypoint`, expected `leopard_rework`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:17.008] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `leopardrework` for name `leopardtruewalk`, expected `leopard_rework`. This could be a intended override, but in most cases indicates a broken mod.
+[27Aug2026 22:17:17.198] [main/INFO] [ZitoenPiece-HakiReq/]: Haki requirements loaded successfully (23 abilities).
+[27Aug2026 22:17:17.226] [modloading-worker-2/INFO] [com.yumixlove.bountyhunters.BountyHunters/]: BountyHunters mod setup complete!
+[27Aug2026 22:17:17.271] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[27Aug2026 22:17:17.292] [modloading-worker-1/INFO] [coms.fightingstyles.FightingStyles/]: FightingStyles common setup - Dial Fighting Style loaded!
+[27Aug2026 22:17:17.367] [modloading-worker-2/INFO] [com.fruitreworks.FruitReworks/]: Ice Rework setup method running
+[27Aug2026 22:17:17.369] [modloading-worker-1/INFO] [zitoenpiece/]: [Honor] Registered honor capability
+[27Aug2026 22:17:17.396] [modloading-worker-2/INFO] [com.fruitreworks.FruitReworks/]: fruitreworks network packets registered
+[27Aug2026 22:17:17.396] [modloading-worker-2/INFO] [com.fruitreworks.FruitReworks/]: Mine Mine No Mi mod detected, Ice abilities will have full functionality
+[27Aug2026 22:17:17.396] [modloading-worker-2/INFO] [com.fruitreworks.FruitReworks/]: Ice Rework setup complete
+[27Aug2026 22:17:17.429] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [controlling] Starting version check at https://updates.blamejared.com/get?n=controlling&gv=1.16.5
+[27Aug2026 22:17:17.485] [modloading-worker-2/INFO] [com.yumixlove.devilhordes.DevilHordes/]: Devil Hordes Setup - Expiration system enabled: true
+[27Aug2026 22:17:17.656] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2daf650b' to registry
+[27Aug2026 22:17:17.661] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@a1143cc' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2d33aa31' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@7475f57e' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@35ec9d29' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2daf650b' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@a1143cc' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2d33aa31' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@7475f57e' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@35ec9d29' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2daf650b' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@a1143cc' to registry
+[27Aug2026 22:17:17.662] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@2d33aa31' to registry
+[27Aug2026 22:17:17.663] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@7475f57e' to registry
+[27Aug2026 22:17:17.663] [modloading-worker-0/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'net.minecraft.world.gen.feature.jigsaw.JigsawPattern@35ec9d29' to registry
+[27Aug2026 22:17:17.830] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for bountyhunters:bounty_hunter, use EntityAttributeCreationEvent instead.
+[27Aug2026 22:17:17.890] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [controlling] Found status: BETA Current: 7.0.0.31 Target: 7.0.0.31
+[27Aug2026 22:17:17.890] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[27Aug2026 22:17:18.029] [modloading-worker-1/INFO] [net.Zitoen.zitoenpiece.ZitoenPiece/]: Got IMC [Hello world]
+[27Aug2026 22:17:18.034] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 36.2.42 Target: null
+[27Aug2026 22:17:18.100] [modloading-worker-3/INFO] [Waila/]: Registered plugin at snownee.jade.JadePlugin
+[27Aug2026 22:17:18.101] [modloading-worker-3/INFO] [Waila/]: Registered plugin at snownee.jade.JadeClientPlugin
+[27Aug2026 22:17:18.104] [modloading-worker-3/INFO] [Waila/]: Registered plugin at mcp.mobius.waila.addons.minecraft.PluginMinecraft
+[27Aug2026 22:17:18.249] [main/WARN] [net.minecraftforge.fml.server.ServerModLoader/LOADING]: Mods loaded with 2 warnings
+[27Aug2026 22:17:18.252] [main/WARN] [net.minecraftforge.fml.server.ServerModLoader/LOADING]: modernfix.no_ferritecore
+[27Aug2026 22:17:18.253] [main/WARN] [net.minecraftforge.fml.server.ServerModLoader/LOADING]: modernfix.perf_mod_warning
+[27Aug2026 22:17:18.665] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[27Aug2026 22:17:18.755] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
+[27Aug2026 22:17:19.270] [main/INFO] [com.fruitreworks.FruitReworks/]: Registered FruitReworks commands
+[27Aug2026 22:17:19.316] [main/INFO] [STDOUT/]: [xyz.pixelatedw.mineminenomi.config.CommonConfig:handler$zjj000$zitoenpiece$overrideHakiExpLimit:1080]: [ZitoenPiece] Modified HAKI_EXP_LIMIT: Default=300, Max=1000000 (0 = infinite)
+[27Aug2026 22:17:19.379] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[27Aug2026 22:17:19.381] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[27Aug2026 22:17:19.382] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[27Aug2026 22:17:19.384] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[27Aug2026 22:17:19.386] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[27Aug2026 22:17:19.391] [main/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.5-36.2.42-universal.jar, ftb-essentials-1605.1.5-build.32.jar, mine-mine-no-mi-1.16.5-0.10.11.jar, Jade-1.16.4-2.8.3.jar, bountyhunters-1.1.0.jar, LeopardRework-1.4-1.16.5.jar, curios-forge-1.16.5-4.1.0.0.jar, awakenawakennomi-0.7.1.jar, Controlling-7.0.0.31.jar, modernfix-forge-5.18.0+mc1.16.5.jar, jei-1.16.5-7.8.0.1009.jar, citadel-1.8.1-1.16.5.jar, yokai-0.0.51.jar, quickteleports-1.16.5-1.2.0-forge.jar, mineminenomiawakenpath-1.0.0.jar, minemineextraslots-1.8-1.16.5.jar, fightingstyles-1.2.5.jar, sophisticatedbackpacks-1.16.5-3.15.20.755.jar, cartaddon-0.8.2.jar, zitoenpiece-0.3.15.jar, coroutil-forge-1.16.5-1.3.6.jar, lazydfu-0.1.3.jar, mvs-2.6.1.jar, architectury-1.32.68.jar, ftb-library-forge-1605.3.5-build.724.jar, lootr-1.16.5-0.2.19.52.jar, fruitreworks-1.3.3.jar, blitzraces-0.0.2-1.16.5.jar, watut-forge-1.16.5-1.0.14.jar, appleskin-forge-mc1.16.x-2.5.1.jar, hito_hito_nika-0.12.1.jar, SkinRestoreForge-1.4.jar, allfruitallboxes-1.0.0.jar, hakibar-1.16.5-1.8.jar, devilhordes-1.2.0-1.16.5.jar, CreativeCore_v2.2.1_mc1.16.5.jar, PlayerRevive_v2.0.0-pre04_mc1.16.5.jar
+[27Aug2026 22:17:19.393] [main/INFO] [ModernFix/]: Invalidating pack caches
+[27Aug2026 22:17:20.005] [Worker-Main-2/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe cartaddon:wapometal_helmet_smithing: com.google.gson.JsonSyntaxException: Unknown item 'cartaddon:wapometal_helmet'
+[27Aug2026 22:17:20.011] [Worker-Main-2/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe cartaddon:wapometal_boots_smithing: com.google.gson.JsonSyntaxException: Unknown item 'cartaddon:wapometal_boots'
+[27Aug2026 22:17:20.019] [Worker-Main-2/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe cartaddon:wapo_metal_upgrade: com.google.gson.JsonSyntaxException: Unknown item 'cartaddon:wapometal_chestplate'
+[27Aug2026 22:17:20.024] [Worker-Main-2/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe cartaddon:wapometal_chestplate_smithing: com.google.gson.JsonSyntaxException: Unknown item 'cartaddon:wapometal_chestplate'
+[27Aug2026 22:17:20.027] [Worker-Main-2/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe cartaddon:wapometal_leggings_smithing: com.google.gson.JsonSyntaxException: Unknown item 'cartaddon:wapometal_leggings'
+[27Aug2026 22:17:20.034] [Worker-Main-2/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[27Aug2026 22:17:20.573] [Worker-Main-2/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1119 advancements
+[27Aug2026 22:17:20.897] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.16.5
+[27Aug2026 22:17:20.899] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[27Aug2026 22:17:20.900] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[27Aug2026 22:17:20.900] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[27Aug2026 22:17:21.060] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[27Aug2026 22:17:21.094] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using epoll channel type
+[27Aug2026 22:17:21.180] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[27Aug2026 22:17:21.181] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[27Aug2026 22:17:21.181] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[27Aug2026 22:17:21.181] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[27Aug2026 22:17:21.213] [Server thread/INFO] [ModernFix/]: Starting locating executor service with thread pool size of 1
+[27Aug2026 22:17:21.234] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[27Aug2026 22:17:21.417] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[27Aug2026 22:17:22.548] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[27Aug2026 22:17:22.549] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[27Aug2026 22:17:22.551] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[27Aug2026 22:17:22.964] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[27Aug2026 22:17:23.289] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1871 ms
+[27Aug2026 22:17:23.289] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.098s)! For help, type "help"
+[27Aug2026 22:17:23.376] [Server thread/INFO] [STDOUT/]: [net.MagicalBlitz.revamp.init.YokaiCommands:onServerStarting:27]: [YOKAI] Abyssal portal commands registered.
+[27Aug2026 22:17:23.381] [Server thread/INFO] [net.Zitoen.zitoenpiece.ZitoenPiece/]: HELLO from server starting
+[27Aug2026 22:17:23.396] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Neko Neko no Mi, Model: Leopard - Replacing with reworked abilities and adding awakening features
+[27Aug2026 22:17:23.402] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Removing conflicting awakening ability from another addon: leopard awakened heavy point (mineminenomi:leopard_awakened_heavy_point)
+[27Aug2026 22:17:23.404] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Leopard abilities with reworked versions and added awakening features!
+[27Aug2026 22:17:23.404] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Ryu Ryu no Mi: Allosaurus - Replacing with reworked abilities
+[27Aug2026 22:17:23.410] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Ryu Ryu no Mi: Brachiosaurus - Replacing with reworked abilities
+[27Aug2026 22:17:23.418] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Hito Hito no Mi (Human Human Fruit) - Adding Perfect Human passive, Strain system, and all form transformations
+[27Aug2026 22:17:23.419] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully added Perfect Human passive, Strain system, and all form transformations to Hito Hito no Mi!
+[27Aug2026 22:17:23.419] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Ushi Ushi no Mi, Model: Giraffe - Adding Neck Strike ability
+[27Aug2026 22:17:23.419] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully added Neck Strike ability to Giraffe Fruit!
+[27Aug2026 22:17:23.419] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Tori Tori no Mi, Model: Phoenix - Keeping base MMNM abilities and retaining healing aura only
+[27Aug2026 22:17:23.420] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Phoenix rework abilities are temporarily disabled; base phoenix abilities remain active with healing aura added.
+[27Aug2026 22:17:23.421] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Kira Kira no Mi (Diamond Fruit) - Replacing with reworked abilities
+[27Aug2026 22:17:23.421] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Kira Kira no Mi abilities with reworked versions!
+[27Aug2026 22:17:23.422] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Supa Supa no Mi (Dice-Dice Fruit) - Replacing with blade slash system
+[27Aug2026 22:17:23.423] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Supa Supa no Mi abilities with blade slash system!
+[27Aug2026 22:17:23.424] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Ito Ito no Mi (String-String Fruit) - Replacing with String Meter system
+[27Aug2026 22:17:23.428] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Ito Ito no Mi abilities with String Meter system!
+[27Aug2026 22:17:23.433] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Gura Gura no Mi (Tremor-Tremor Fruit) - Replacing with Air Crack visual effects
+[27Aug2026 22:17:23.435] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Gura Gura no Mi abilities with Air Crack visual effects!
+[27Aug2026 22:17:23.435] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Bomu Bomu no Mi (Bomb-Bomb Fruit) - Replacing with Bomb Energy system
+[27Aug2026 22:17:23.442] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Bomu Bomu no Mi abilities with Bomb Energy system!
+[27Aug2026 22:17:23.443] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Suna Suna no Mi (Sand-Sand Fruit) - Adding Suna rework abilities and immunities
+[27Aug2026 22:17:23.452] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced core Suna abilities with Fruit Reworks variants!
+[27Aug2026 22:17:23.454] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Hie Hie no Mi (Ice Ice Fruit) - Replacing with Ice Meter system
+[27Aug2026 22:17:23.456] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Hie Hie no Mi abilities with Ice Meter system!
+[27Aug2026 22:17:23.457] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Modifying Mera Mera no Mi (Flame-Flame Fruit) - Adding Flame Meter system
+[27Aug2026 22:17:23.462] [Server thread/INFO] [com.fruitreworks.FruitReworks/]: Successfully replaced Mera Mera no Mi abilities with Flame Meter system!
+[27Aug2026 22:17:23.475] [Server thread/WARN] [ModernFix/]: Dedicated server took 20.83 seconds to load
+[27Aug2026 22:17:32.556] [Netty Epoll Server IO #2/ERROR] [net.minecraftforge.fml.network.NetworkRegistry/NETREGISTRY]: Channels [playerrevive:main,creativecore:main] rejected their client side version number
+[27Aug2026 22:17:32.557] [Netty Epoll Server IO #2/ERROR] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[27Aug2026 22:17:32.594] [Server thread/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: com.mojang.authlib.GameProfile@3aee1fc7[id=<null>,name=karma10K,properties={},legacy=false] (/100.67.81.59:59479) lost connection: Connection closed - mismatched mod channel list
+[27Aug2026 22:17:35.838] [Netty Epoll Server IO #4/ERROR] [net.minecraftforge.fml.network.NetworkRegistry/NETREGISTRY]: Channels [playerrevive:main,creativecore:main] rejected their client side version number
+[27Aug2026 22:17:35.839] [Netty Epoll Server IO #4/ERROR] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[27Aug2026 22:17:35.882] [Server thread/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: com.mojang.authlib.GameProfile@2e794a80[id=<null>,name=karma10K,properties={},legacy=false] (/100.67.81.59:61638) lost connection: Connection closed - mismatched mod channel list
+[27Aug2026 22:17:38.036] [Netty Epoll Server IO #5/ERROR] [net.minecraftforge.fml.network.NetworkRegistry/NETREGISTRY]: Channels [playerrevive:main,creativecore:main] rejected their client side version number
+[27Aug2026 22:17:38.037] [Netty Epoll Server IO #5/ERROR] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[27Aug2026 22:17:38.087] [Server thread/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: com.mojang.authlib.GameProfile@39fed40d[id=<null>,name=karma10K,properties={},legacy=false] (/100.67.81.59:61640) lost connection: Connection closed - mismatched mod channel list
+[27Aug2026 22:17:39.929] [Netty Epoll Server IO #6/ERROR] [net.minecraftforge.fml.network.NetworkRegistry/NETREGISTRY]: Channels [playerrevive:main,creativecore:main] rejected their client side version number
+[27Aug2026 22:17:39.930] [Netty Epoll Server IO #6/ERROR] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[27Aug2026 22:17:39.979] [Server thread/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: com.mojang.authlib.GameProfile@29fb5439[id=<null>,name=karma10K,properties={},legacy=false] (/100.67.81.59:61641) lost connection: Connection closed - mismatched mod channel list
+[27Aug2026 22:19:05.651] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@54df48a0
+[27Aug2026 22:19:05.697] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Tmarsi219[/100.109.76.68:65371] logged in with entity id 135 at (-5969.51741425753, 72.1212968405392, -3504.610381475056)
+[27Aug2026 22:19:05.743] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Don Tmarsi219 joined the game
+[27Aug2026 22:19:05.881] [Server thread/INFO] [Waila/]: Syncing config to Tmarsi219 (fa9e6abc-6e4a-352b-b5da-32290d78f2d4)
+[27Aug2026 22:19:05.892] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:21]: [HakiMastery] PlayerLoggedInEvent fired for Tmarsi219
+[27Aug2026 22:19:05.893] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:33]: [HakiMastery] Processing login for Tmarsi219
+[27Aug2026 22:19:05.896] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:113]: [HakiMastery] Checking abilities for Tmarsi219
+[27Aug2026 22:19:05.897] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:323]: [HakiMastery] No changes needed for Tmarsi219
+[27Aug2026 22:19:05.897] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:37]: [HakiMastery] Login processing complete for Tmarsi219
+[27Aug2026 22:19:05.919] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:33]: [SkinRestoreForge DEBUG] Refreshing tab list for: Tmarsi219 (fa9e6abc-6e4a-352b-b5da-32290d78f2d4)
+[27Aug2026 22:19:05.919] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:34]: [SkinRestoreForge DEBUG] textures property count: 1
+[27Aug2026 22:19:05.920] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:lambda$refreshTabList$0:36]: [SkinRestoreForge DEBUG] value length=412 hasSignature=true
+[27Aug2026 22:19:05.920] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:39]: [SkinRestoreForge DEBUG] Connected players count: 1
+[27Aug2026 22:19:05.921] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:48]: [SkinRestoreForge DEBUG] REMOVE_PLAYER + ADD_PLAYER packets sent.
+[27Aug2026 22:19:08.036] [Server thread/INFO] [STDOUT/]: [xyz.pixelatedw.mineminenomi.abilities.haki.BusoshokuHakiHardeningAbility:zitoenpiece$initializeReflection:1071]: [ZitoenPiece] Hardening overlay reflection initialized successfully
+[27Aug2026 22:19:16.448] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@4ee3d5e
+[27Aug2026 22:19:16.465] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: karma10K[/100.67.81.59:53612] logged in with entity id 310 at (-1574.8115881177205, 70.7531999805212, -3365.2265671046234)
+[27Aug2026 22:19:16.478] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Capone karma10K joined the game
+[27Aug2026 22:19:16.537] [Server thread/INFO] [Waila/]: Syncing config to karma10K (df4d4f62-fec7-3ff6-a1b6-71a5d79b6667)
+[27Aug2026 22:19:16.538] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:21]: [HakiMastery] PlayerLoggedInEvent fired for karma10K
+[27Aug2026 22:19:16.538] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:33]: [HakiMastery] Processing login for karma10K
+[27Aug2026 22:19:16.539] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:113]: [HakiMastery] Checking abilities for karma10K
+[27Aug2026 22:19:16.539] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:323]: [HakiMastery] No changes needed for karma10K
+[27Aug2026 22:19:16.540] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:37]: [HakiMastery] Login processing complete for karma10K
+[27Aug2026 22:19:16.549] [Server thread/INFO] [com.yumixlove.devilhordes.DevilHordes/]: Devil fruit mineminenomi:noro_noro_no_mi expired for player karma10K
+[27Aug2026 22:19:44.553] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@65dc577a
+[27Aug2026 22:19:44.560] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: dante_11223[/100.120.13.23:54859] logged in with entity id 836 at (-2166.857364554203, 48.0, -3747.6853178605247)
+[27Aug2026 22:19:44.568] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 joined the game
+[27Aug2026 22:19:44.629] [Server thread/INFO] [Waila/]: Syncing config to dante_11223 (fc0fbe5d-4170-3762-adae-7e5e79a6b7ec)
+[27Aug2026 22:19:44.630] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:21]: [HakiMastery] PlayerLoggedInEvent fired for dante_11223
+[27Aug2026 22:19:44.630] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:33]: [HakiMastery] Processing login for dante_11223
+[27Aug2026 22:19:44.630] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:113]: [HakiMastery] Checking abilities for dante_11223
+[27Aug2026 22:19:44.631] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:323]: [HakiMastery] No changes needed for dante_11223
+[27Aug2026 22:19:44.631] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:37]: [HakiMastery] Login processing complete for dante_11223
+[27Aug2026 22:19:44.633] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:33]: [SkinRestoreForge DEBUG] Refreshing tab list for: dante_11223 (fc0fbe5d-4170-3762-adae-7e5e79a6b7ec)
+[27Aug2026 22:19:44.633] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:34]: [SkinRestoreForge DEBUG] textures property count: 1
+[27Aug2026 22:19:44.633] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:lambda$refreshTabList$0:36]: [SkinRestoreForge DEBUG] value length=480 hasSignature=true
+[27Aug2026 22:19:44.633] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:39]: [SkinRestoreForge DEBUG] Connected players count: 3
+[27Aug2026 22:19:44.634] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:48]: [SkinRestoreForge DEBUG] REMOVE_PLAYER + ADD_PLAYER packets sent.
+[27Aug2026 22:20:03.828] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Capone karma10K: Teleported Capone karma10K to Don Tmarsi219]
+[27Aug2026 22:21:05.786] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: karma10K moved too quickly! 3.222034731156782,14.454346065835509,-9.91951064367413
+[27Aug2026 22:22:03.263] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Capone karma10K: Teleported Capone karma10K to Jaguar dante_11223]
+[27Aug2026 22:22:24.827] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Don Tmarsi219: Teleported Don Tmarsi219 to Capone karma10K]
+[27Aug2026 22:22:40.216] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 is bleeding...
+[27Aug2026 22:26:00.160] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: karma10K moved wrongly!
+[27Aug2026 22:26:03.496] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 is bleeding...
+[27Aug2026 22:26:34.186] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Don Tmarsi219 has made the advancement [Isn't It Iron Pick]
+[27Aug2026 22:27:04.632] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: karma10K moved too quickly! -2.268819829603217,-10.806526110009003,-0.13459429327849648
+[27Aug2026 22:27:35.449] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Don Tmarsi219: Teleported Don Tmarsi219 to Capone karma10K]
+[27Aug2026 22:28:35.201] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Capone karma10K has made the advancement [Stone Age]
+[27Aug2026 22:29:17.655] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Don Tmarsi219: Teleported Don Tmarsi219 to Capone karma10K]
+[27Aug2026 22:29:23.853] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: Tmarsi219 moved wrongly!
+[27Aug2026 22:34:14.623] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Capone karma10K: Teleported Capone karma10K to Jaguar dante_11223]
+[27Aug2026 22:35:49.871] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Don Tmarsi219: Kicked Jaguar dante_11223: Kicked by an operator]
+[27Aug2026 22:35:49.913] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: dante_11223 lost connection: Kicked by an operator
+[27Aug2026 22:35:49.914] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 left the game
+[27Aug2026 22:35:57.264] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@14aa16a1
+[27Aug2026 22:35:57.276] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: dante_11223[/100.120.13.23:52458] logged in with entity id 11554 at (-2662.224754399313, 70.2496807172308, -3584.924966355993)
+[27Aug2026 22:35:57.289] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 joined the game
+[27Aug2026 22:35:57.384] [Server thread/INFO] [Waila/]: Syncing config to dante_11223 (fc0fbe5d-4170-3762-adae-7e5e79a6b7ec)
+[27Aug2026 22:35:57.385] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:21]: [HakiMastery] PlayerLoggedInEvent fired for dante_11223
+[27Aug2026 22:35:57.386] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:33]: [HakiMastery] Processing login for dante_11223
+[27Aug2026 22:35:57.387] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:113]: [HakiMastery] Checking abilities for dante_11223
+[27Aug2026 22:35:57.388] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryManager:updateMasteryFromAbilities:323]: [HakiMastery] No changes needed for dante_11223
+[27Aug2026 22:35:57.389] [Server thread/INFO] [STDOUT/]: [net.Zitoen.zitoenpiece.haki.HakiMasteryEvents:onPlayerLogin:37]: [HakiMastery] Login processing complete for dante_11223
+[27Aug2026 22:35:57.391] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:33]: [SkinRestoreForge DEBUG] Refreshing tab list for: dante_11223 (fc0fbe5d-4170-3762-adae-7e5e79a6b7ec)
+[27Aug2026 22:35:57.391] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:34]: [SkinRestoreForge DEBUG] textures property count: 1
+[27Aug2026 22:35:57.392] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:lambda$refreshTabList$0:36]: [SkinRestoreForge DEBUG] value length=480 hasSignature=true
+[27Aug2026 22:35:57.392] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:39]: [SkinRestoreForge DEBUG] Connected players count: 3
+[27Aug2026 22:35:57.393] [Server thread/INFO] [STDOUT/]: [com.anonymdev.skinrestoreforge.util.SkinApplier:refreshTabList:48]: [SkinRestoreForge DEBUG] REMOVE_PLAYER + ADD_PLAYER packets sent.
+[27Aug2026 22:36:04.372] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Capone karma10K: Teleported Capone karma10K to Jaguar dante_11223]
+[27Aug2026 22:36:26.153] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Don Tmarsi219: Teleported Don Tmarsi219 to Capone karma10K]
+[27Aug2026 22:37:10.243] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 is bleeding...
+[27Aug2026 22:38:10.411] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: dante_11223 moved too quickly! -2.0311196841298624,17.65048542346463,7.704672844361085
+[27Aug2026 22:38:11.757] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jaguar dante_11223 is bleeding...

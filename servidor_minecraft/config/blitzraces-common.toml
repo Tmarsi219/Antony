@@ -1,0 +1,12 @@
+
+[General]
+	#Allows the Angel race to be selected in the character creator
+	#Default: true
+	"Enable Angel Race" = true
+	#Allows the Demon race to be selected in the character creator
+	#Default: true
+	"Enable Demon Race" = true
+	#Allows the Reptoid race to be selected in the character creator
+	#Default: true
+	"Enable Reptoid Race" = true
+

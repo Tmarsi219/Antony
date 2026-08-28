@@ -1,0 +1,7 @@
+
+[general]
+	#If true, players will NOT receive a chat message when their skin is set, cleared, or randomized.
+	hideSkinMessages = false
+	#If true, a player's head (with their custom skin applied) drops when they die.
+	enableHeadDrop = true
+

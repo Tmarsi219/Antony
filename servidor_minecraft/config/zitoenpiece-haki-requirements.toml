@@ -1,0 +1,398 @@
+
+#Haki ability requirements.
+#
+#Each ability has substat thresholds (e.g. 'buso_hardness:50') and a token cost for each step.
+#Edit the numbers to change what players need to unlock or upgrade an ability.
+#
+#Valid substat IDs:
+#  buso_endurance, buso_power, buso_hardness
+#  ken_awareness, ken_sense, ken_focus
+#  hao_intensity, hao_dominance, hao_control
+#
+#An empty list ([]) means no substat requirement for that step.
+#Restart the server after editing this file.
+[haki_requirements]
+
+	#Armament Haki abilities (Busoshoku).
+	[haki_requirements.armament]
+
+		[haki_requirements.armament.buso_emission]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_power:55", "buso_hardness:45", "buso_endurance:35"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_power:30", "buso_hardness:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["buso_endurance:55", "buso_power:80"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 8
+
+		#Granted automatically on Haki awakening (no unlock cost).
+		[haki_requirements.armament.buso_imbuing]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_power:50", "buso_hardness:35", "buso_endurance:25"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_power:25", "buso_hardness:15"]
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 2
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 4
+
+		#Granted automatically on Haki awakening (no unlock cost).
+		[haki_requirements.armament.buso_hardening]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_hardness:50", "buso_power:40", "buso_endurance:30"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_hardness:25", "buso_power:20"]
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 2
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 4
+
+		[haki_requirements.armament.buso_emission_block]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_endurance:60", "buso_hardness:50", "buso_power:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_endurance:35", "buso_hardness:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["buso_endurance:70", "buso_hardness:60"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.armament.buso_emission_shockwave]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_power:65", "buso_hardness:50", "buso_endurance:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_power:40", "buso_hardness:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["buso_power:100"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.armament.buso_internal_destruction]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_power:70", "buso_endurance:55", "buso_hardness:45"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_power:45", "buso_endurance:35"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 5
+			#Substats required to unlock this ability.
+			unlock_substats = ["buso_power:120", "buso_endurance:75"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 8
+
+		[haki_requirements.armament.buso_full_body_hardening]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["buso_hardness:90", "buso_endurance:60", "buso_power:50"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["buso_hardness:60", "buso_endurance:40", "buso_power:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["buso_hardness:50", "buso_endurance:20"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+	#General Haki mastery abilities.
+	[haki_requirements.general]
+
+		[haki_requirements.general.haki_effect_nullification]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_control:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = []
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 4
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = []
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+	#Observation Haki abilities (Kenbunshoku).
+	[haki_requirements.observation]
+
+		[haki_requirements.observation.ken_future_sight]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_awareness:60", "ken_focus:50", "ken_sense:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_awareness:35", "ken_focus:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 4
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_awareness:80", "ken_focus:40"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.observation.ken_suppression]
+			#Substats required to upgrade to Mastered.
+			t3_substats = []
+			#Substats required to upgrade to Advanced.
+			t2_substats = []
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = []
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		#Granted automatically on Haki awakening (no unlock cost).
+		[haki_requirements.observation.ken_intent_sense]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_focus:50", "ken_awareness:40", "ken_sense:30"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_focus:25", "ken_awareness:20"]
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 2
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.observation.ken_emotion_sense]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_awareness:70", "ken_sense:50", "ken_focus:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_awareness:45", "ken_sense:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_awareness:30", "ken_focus:15"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.observation.ken_clairvoyance]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_sense:60", "ken_focus:50", "ken_awareness:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_sense:35", "ken_focus:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 4
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_sense:80", "ken_focus:40"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 8
+
+		#Granted automatically on Haki awakening (no unlock cost).
+		[haki_requirements.observation.ken_aura_sense]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_sense:45", "ken_focus:35", "ken_awareness:25"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_sense:20", "ken_focus:15"]
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 2
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 4
+
+		[haki_requirements.observation.ken_foresight]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_awareness:65", "ken_focus:55", "ken_sense:45"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_awareness:40", "ken_focus:35"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_awareness:120"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.observation.voice_of_all_things]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_sense:75", "ken_awareness:60", "ken_focus:50"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_sense:50", "ken_awareness:40"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_sense:120"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.observation.ken_strength_sense]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["ken_sense:70", "ken_awareness:50", "ken_focus:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["ken_sense:45", "ken_awareness:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 3
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 2
+			#Substats required to unlock this ability.
+			unlock_substats = ["ken_sense:30", "ken_focus:15"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+	#Conqueror's Haki abilities (Haoshoku).
+	[haki_requirements.conqueror]
+
+		#Granted automatically on Haki awakening (no unlock cost).
+		[haki_requirements.conqueror.hao_conqueror]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_intensity:50", "hao_dominance:45", "hao_control:35"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_intensity:25", "hao_dominance:20"]
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.conqueror.hao_transmission]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_control:60", "hao_dominance:45", "hao_intensity:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_control:35", "hao_dominance:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["hao_control:60", "hao_dominance:25"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.conqueror.hao_sealing]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_control:65", "hao_intensity:55", "hao_dominance:45"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_control:40", "hao_intensity:30"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["hao_control:60", "hao_intensity:60"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.conqueror.hao_guard]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_control:55", "hao_dominance:45", "hao_intensity:35"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_control:30", "hao_dominance:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 4
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["hao_control:40", "hao_dominance:30", "hao_intensity:25"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+
+		[haki_requirements.conqueror.hao_infusion]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_intensity:65", "hao_control:50", "hao_dominance:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_intensity:35", "hao_control:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 5
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 4
+			#Substats required to unlock this ability.
+			unlock_substats = ["hao_intensity:80", "hao_control:30"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 6
+
+		[haki_requirements.conqueror.hao_killer_of_observation]
+			#Substats required to upgrade to Mastered.
+			t3_substats = ["hao_dominance:60", "hao_control:50", "hao_intensity:40"]
+			#Substats required to upgrade to Advanced.
+			t2_substats = ["hao_dominance:35", "hao_control:25"]
+			#Tokens to unlock this ability.
+			#Range: 0 ~ 100
+			unlock_token_cost = 4
+			#Tokens to upgrade to Advanced.
+			#Range: 0 ~ 100
+			t1_to_t2_token_cost = 3
+			#Substats required to unlock this ability.
+			unlock_substats = ["hao_dominance:70", "hao_control:30"]
+			#Tokens to upgrade to Mastered.
+			#Range: 0 ~ 100
+			t2_to_t3_token_cost = 5
+

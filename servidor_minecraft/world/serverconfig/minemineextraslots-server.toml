@@ -1,0 +1,6 @@
+
+["General Settings"]
+	#How many extra ability slots should be available? (Default: 5, Max: 5)
+	#Range: 0 ~ 5
+	extra_slots = 5
+
